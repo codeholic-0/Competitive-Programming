@@ -1,6 +1,6 @@
 {
     "cmd": [
-        "g++ -std=c++17 -Wall -Wextra -O2 \"$file_name\" -o \"$file_base_name\" && ([ -f inputf.in ] && timeout 4s ./$file_base_name < inputf.in > outputf.in || timeout 4s ./$file_base_name) || echo 'Compilation failed'"
+        "g++ -std=c++14 -Wall -Wextra -O2 \"$file_name\" -o \"$file_base_name\" && ([ -f inputf.in ] && timeout 4s ./$file_base_name < inputf.in > outputf.in || timeout 4s ./$file_base_name) || echo 'Compilation failed'"
     ],
     "selector": "source.c++",
     "shell": true,
